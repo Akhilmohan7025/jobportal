@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+{%block body_block%}
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+        <table class="table">
+
+            <tr>
+                <th>Job_details</th>
+                <th>Location</th>
+                <th>Experience</th>
+                <th>Salary</th>
+                <th>Skills</th>
+
+            </tr>
+            <tr>
+                {%for lstjb in lstjb %}
+            <tr>
+
+                <td>{{lstjb.Job_details}}</td>
+                <td>{{lstjb.Location}}</td>
+                <td>{{lstjb.Experience}}</td>
+                <td>{{lstjb.Salary}}</td>
+                <td>{{lstjb.Skills}}</td>
+                <td><a href="">{{lstcmp.Websites}}</a></td>
+                <td><a href="{% url 'editjobs' lstjb.id %}" class="btn btn-outline-primary">Edit</a></td>
+                <td><a href="{% url 'deletejobs' lstjb.id %}" class="btn btn-outline-danger">Delete</a></td>
+
+
+            </tr>
+            {%endfor%}
+            </tr>
+        </table>
+    </div>
+    <div class="col-1"></div>
+</div>
+{%endblock%}

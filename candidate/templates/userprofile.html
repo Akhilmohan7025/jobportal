@@ -1,0 +1,20 @@
+
+{%extends 'base 1.html'%}
+{%block body_block%}
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-4">
+                <h5 class="card-title">{{request.user}}</h5>
+                <h5 class="card-title">{{request.user.photo}}</h5>
+                <h5 class="card-title">{{request.user.dob}}</h5>
+                <h5 class="card-title">{{request.user.mobile}}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-4"></div>
+</div>
+
+{%endblock%}

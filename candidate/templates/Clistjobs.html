@@ -1,0 +1,46 @@
+{%extends 'base 1.html'%}
+{%block body_block%}
+<!--<h1 style="font-family: 'Pacifico', cursive;">Welcome-{{request.user}}</h1>-->
+
+<div class="row "> 
+    {%for home in home%}
+    <div class="col-2"></div>
+        <div class="col-8">
+       
+         <div class="  " style="width:22rem;">
+                <div class="card  mt-5">
+
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>JOB:</strong>
+                        <small>{{home.Job_details}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left">
+                        <i class="fa-solid fa-location-dot"></i><small>{{home.Location}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left">
+                        <strong>EXPERIENCE:</strong><small>{{home.Experience}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>SALARY:</strong><small>{{home.Salary}}</small>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>Skills:</strong><small>{{home.Skills}}</small>
+                    </h6>
+
+
+                    <td><a class="btn btn-info" href="{% url 'apform'%}">Apply Now</a></td>
+                    <input class="btn btn-success" type="submit" value="Save">
+
+
+
+                </div>
+                <!--            <div class="card-footer text-muted">-->
+
+                <!--            </div>-->
+            </div>
+        </div>
+        <div class="col-2"></div>
+        {%endfor%}
+    </div>
+
+        
+        </div>
+
+    {%endblock%}
+
+
+

@@ -1,0 +1,78 @@
+
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+
+/* From uiverse.io by @niat786 */
+button {
+    border:none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #2bff00, #4ce3f7);
+    border-radius:0%;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 10px;
+    padding: 0.6em 1.5em;
+
+   }
+   
+   button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+h1{
+    color: #0400ff;
+}
+
+/* From uiverse.io by @SharpTH */
+.card {
+    cursor: pointer;
+    width: 190px;
+    height: 300x;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, .2);
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+   }
+   
+   .card:hover {
+    box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+   }
+   
+.card-body{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 255, .2);
+}
+
+   
+   
+   

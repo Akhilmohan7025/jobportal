@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block body_block%}
+<div class="container">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+
+            {%for aform in aform%}
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>Name:</strong>
+                        <small>{{aform.first_name}} {{aform.last_name}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>Address:</strong>
+                        <small>{{aform.address}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>Contact:</strong>
+                        <small>{{aform.phone_number}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>location:</strong>
+                        <small>{{aform.location}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>Gradution Year:</strong>
+                        <small>{{aform.grad_year}}</small></h6>
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>Postion:</strong>
+                        <small>{{aform.postion_for_which_you_applying}}</small></h6>
+
+
+
+                    <h6 class="card-subtitle mb-2 " align="left"><strong>Resume:</strong>
+                        <small>{{aform.resume}}</small></h6>
+
+
+                </ul>
+            </div>
+
+
+            {%endfor%}
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-1"></div>
+</div>
+</div>
+{%endblock%}
